@@ -1,4 +1,4 @@
-require('dotenv').config()
+if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 const path = require('path')
 const Hapi = require('hapi')
 const inert = require('inert')
@@ -22,8 +22,8 @@ const leaguejs = new LeagueJS(process.env.LEAGUE_API_KEY, {
 })
 
 const server = Hapi.server({
-  port: process.env.PORT,
-  host: 'localhost',
+  port: process.env.PORT || 3000,
+  host: process.env.HOST || 'localhost',
 })
 
 // logging on server response
