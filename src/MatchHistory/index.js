@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from '@emotion/styled'
 import { Box, Col, Grid, Row, th } from '@smooth-ui/core-em'
 import prettyMs from 'pretty-ms'
