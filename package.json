@@ -24,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch": "nodemon server",
-    "prod": "node server"
+    "prod": "node server",
+    "heroku-postbuild": "npm run build"
   },
   "nodemonConfig": {
     "ignore": [
